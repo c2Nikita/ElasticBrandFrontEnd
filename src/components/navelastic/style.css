@@ -1,0 +1,113 @@
+li {
+  list-style-type: none;
+}
+
+.header {
+  background: #ffffff;
+  display: block;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: "Bebas Neue";
+  justify-content: space-between;
+  margin: 0;
+}
+
+.main {
+  padding-left: 3rem;
+  justify-content: center;
+  line-height: 0;
+  margin: 0;
+  color: rgb(var(34, 34, 34));
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.06rem;
+}
+
+.header-icon {
+  width: 18rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.header-icons {
+  display: flex;
+}
+
+.a-header {
+  font-size: clamp(0.5rem, -0.125rem + 3.13vw, 3rem);
+  text-decoration: none;
+  color: black;
+}
+
+.header-list-menu {
+  position: relative;
+}
+
+.header-ul {
+  position: absolute;
+  width: 15rem;
+  text-decoration: none;
+  background-color: white;
+  font-size: 2rem;
+  border: solid 1px black;
+  opacity: 0;
+  color: black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.shop-a {
+  font-family: "Bebas Neue";
+  text-decoration: none;
+  color: black;
+}
+
+.header-list-menu:hover .header-ul,
+.header-list-menu .shop-button:hover + .header-ul {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.list-menu {
+  display: flex;
+}
+
+.shop {
+  padding-right: 5rem;
+  padding-left: 2rem;
+}
+
+.shop-button {
+  display: inline-block;
+}
+
+.arrow {
+  width: 3rem;
+  height: 2rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.scarbook {
+  padding-right: 5rem;
+}
+
+.header-search {
+  padding-right: 5rem;
+  padding-left: 3rem;
+}
+
+.header-account {
+  padding-right: 5rem;
+}
+
+.header-bag {
+  padding-right: 10rem;
+}

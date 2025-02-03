@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+html {
+  font-size: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Bebas Neue";
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  letter-spacing: 0.06rem;
+  line-height: 1.8;
+}
+
+.base {
+  height: 60rem;
+  background-color: black;
+}

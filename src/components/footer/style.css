@@ -1,0 +1,16 @@
+.footer {
+  padding: 2rem;
+  background-color: black;
+}
+
+.footer-social {
+  padding-bottom: 1rem;
+  padding-top: 5rem;
+}
+
+.footer-up {
+  display: flex;
+  justify-content: center;
+
+  border-top: solid 1px white;
+}
