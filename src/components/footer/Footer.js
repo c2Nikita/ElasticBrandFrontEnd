@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-up">
         <div className="footer-social">
-          <a href="https://www.instagram.com/elastic.42/">
+          <a href="https://www.instagram.com/elastic.42/" target="_blank">
             <img src={instagram} alt="instagram" />
           </a>
           <a href="#telegram">

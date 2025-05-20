@@ -10,11 +10,49 @@ html {
 body {
   min-height: 100%;
   margin: 0;
+  padding: 0;
   letter-spacing: 0.06rem;
   line-height: 1.8;
+  background-color: black; /* Добавил чтобы не было белых полос */
 }
 
-.base {
-  height: 60rem;
+.back {
+  width: 100%;
   background-color: black;
+  padding: 20px 0;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr)); /* Фиксим проблему с шириной */
+  gap: 20px;
+  width: 95%;
+  max-width: 1600px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* Добавляем адаптивность */
+@media (max-width: 1200px) {
+  .product-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.shop-a.active {
+  color: #ff0000; /* или любой другой цвет для выделения */
+  font-weight: bold;
+  border-bottom: 2px solid #ff0000;
 }
